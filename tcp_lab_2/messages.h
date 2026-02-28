@@ -25,3 +25,4 @@ inline void prepareMessage(Message &msg, uint8_t type, const std::string &text){
     std::strncpy(msg.payload, text.c_str(), MAX_PAYLOAD - 1);
     msg.length = sizeof(msg.type) + std::strlen(msg.payload);
 }
+
